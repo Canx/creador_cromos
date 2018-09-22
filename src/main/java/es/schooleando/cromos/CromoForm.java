@@ -4,30 +4,38 @@ import java.io.Serializable;
 import java.util.Date;
 
 import javax.validation.constraints.Min;
+import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.NotNull;
+import javax.validation.constraints.Positive;
 
 import org.springframework.format.annotation.DateTimeFormat;
 import org.springframework.web.multipart.MultipartFile;
 
 public class CromoForm {
+	@NotBlank
 	private String nombre;
 	
+	@NotBlank
 	private String equipo;
 	
 	@NotNull
     @Min(1)
 	private String cantidad;
 	
+	@NotNull
 	@DateTimeFormat(pattern = "yyyy-MM-dd")
 	private Date nacimiento;
 	
+	@Positive
+	@NotNull
 	private Integer peso;
 	
+	@Positive
+	@NotNull
 	private Integer altura;
 	
 	private String imagen_url;
 	
-	// this field does not persist!
 	private MultipartFile imagen;
 
 	public Date getNacimiento() {

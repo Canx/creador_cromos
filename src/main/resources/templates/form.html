@@ -9,32 +9,38 @@
 <h1>Crear cromo nuevo</h1>
 <form action="#" th:action="@{/}" th:object="${cromo}" method="post" enctype="multipart/form-data">
 	<div class="form-group">
-	<label for="nombre">Nombre</label>
-    <input type="text" id="nombre" class="form-control" th:field="*{nombre}" />
+	<label for="nombre" th:classappend="${#fields.hasErrors('nombre')}? text-danger">Nombre</label>
+    <input type="text" id="nombre" class="form-control" th:field="*{nombre}" th:classappend="${#fields.hasErrors('nombre')}? is-invalid" />
+    <label th:if="${#fields.hasErrors('nombre')}" th:errors="*{peso}">Nombre Error</label>
 	</div>
 	<div class="form-group">
-		<label for="equipo">Equipo</label>
-		<input type="text" id="equipo" class="form-control" th:field="*{equipo}" />
+		<label for="equipo" th:classappend="${#fields.hasErrors('equipo')}? text-danger">Equipo</label>
+		<input type="text" id="equipo" class="form-control" th:field="*{equipo}" th:classappend="${#fields.hasErrors('equipo')}? is-invalid" />
+		<label th:if="${#fields.hasErrors('equipo')}" th:errors="*{equipo}">Equipo Error</label>
     </div>
     <div class="form-group">
-    	<label for="nacimiento">Nacimiento</label>
-		<input type="date" id="nacimiento" class="form-control" th:field="*{nacimiento}" />
+    	<label for="nacimiento" th:classappend="${#fields.hasErrors('nacimiento')}? text-danger">Nacimiento</label>
+		<input type="date" id="nacimiento" class="form-control" th:field="*{nacimiento}" th:classappend="${#fields.hasErrors('nacimiento')}? is-invalid"/>
+		<label th:if="${#fields.hasErrors('nacimiento')}" th:errors="*{nacimiento}">Nacimiento Error</label>
 	</div>
 	<div class="form-group">
-		<label for="peso">Peso</label>
-		<input type="number" id="peso" class="form-control" th:field="*{peso}" />
+		<label for="peso" th:classappend="${#fields.hasErrors('peso')}? text-danger">Peso</label>
+		<input type="number" id="peso" class="form-control" th:field="*{peso}" th:classappend="${#fields.hasErrors('peso')}? is-invalid"/>
+		<label th:if="${#fields.hasErrors('peso')}" th:errors="*{peso}">Peso Error</label>
 	</div>
 	<div class="form-group">
-		<label for="altura">Altura</label>
-		<input type="number" id="altura" class="form-control" th:field="*{altura}" />
+		<label for="altura" th:classappend="${#fields.hasErrors('altura')}? text-danger">Altura</label>
+		<input type="number" id="altura" class="form-control" th:field="*{altura}" th:classappend="${#fields.hasErrors('altura')}? is-invalid" />
+		<label th:if="${#fields.hasErrors('altura')}" th:errors="*{altura}">Altura Error</label>
 	</div>
 	<div class="form-group">
-		<label for="imagen">Imagen</label>
-		<input type="file" if="imagen" class="form-control"th:field="*{imagen}" />
+		<label for="imagen" th:classappend="${#fields.hasErrors('imagen')}? text-danger">Imagen</label>
+		<input type="file" id="imagen" class="form-control" th:field="*{imagen}" th:classappend="${#fields.hasErrors('imagen')}? is-invalid" />
+		<label th:if="${#fields.hasErrors('imagen')}" th:errors="*{imagen}">Imagen Error</label>
 	</div>
-	<div class="form-group" th:classappend="${#fields.hasErrors('cantidad')}? has-error">
-		<label for="cantidad">Cantidad de cromos</label>
-		<input type="number" id="cantidad" class="form-control" th:field="*{cantidad}"  />
+	<div class="form-group">
+		<label for="cantidad" th:classappend="${#fields.hasErrors('cantidad')}? text-danger">Cantidad de cromos</label>
+		<input type="number" id="cantidad" class="form-control" th:field="*{cantidad}" th:classappend="${#fields.hasErrors('cantidad')}? is-invalid" />
 		<label th:if="${#fields.hasErrors('cantidad')}" th:errors="*{cantidad}">Cantidad Error</label>
 		
 	</div>
