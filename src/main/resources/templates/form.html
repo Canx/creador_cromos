@@ -7,43 +7,44 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
-<h1>Crear cromo nuevo</h1>
-<div class="container-fluid">
+
+<div class="container-fluid col-xs-12 col-sm-6 col-md-8">
+<h1>Crear cromo</h1>
 <form action="#" th:action="@{/}" th:object="${cromo}" method="post" enctype="multipart/form-data">
-	<div class="form-group">
-	<label for="nombre" class="col-form-label" th:classappend="${#fields.hasErrors('nombre')}? text-danger">Nombre</label>
-    <input type="text" id="nombre" class="form-control" th:field="*{nombre}" th:classappend="${#fields.hasErrors('nombre')}? is-invalid" />
-    <label  th:if="${#fields.hasErrors('nombre')}" th:errors="*{peso}">Nombre Error</label>
+	<div class="form-group row">
+	<label for="nombre" class="col-sm-2" th:classappend="${#fields.hasErrors('nombre')}? text-danger">Nombre</label>
+    <input type="text" id="nombre" class="col-sm-6 form-control" th:field="*{nombre}" th:classappend="${#fields.hasErrors('nombre')}? is-invalid" />
+    <label class="col-sm-4" th:if="${#fields.hasErrors('nombre')}" th:errors="*{peso}">Nombre Error</label>
 	</div>
-	<div class="form-group">
-		<label for="equipo" class="col-form-label" th:classappend="${#fields.hasErrors('equipo')}? text-danger">Equipo</label>
-		<input type="text" id="equipo" class="form-control" th:field="*{equipo}" th:classappend="${#fields.hasErrors('equipo')}? is-invalid" />
-		<label  th:if="${#fields.hasErrors('equipo')}" th:errors="*{equipo}">Equipo Error</label>
+	<div class="form-group row">
+		<label for="equipo" class="col-sm-2 col-form-label" th:classappend="${#fields.hasErrors('equipo')}? text-danger">Equipo</label>
+		<input type="text" id="equipo" class="col-sm-6 form-control" th:field="*{equipo}" th:classappend="${#fields.hasErrors('equipo')}? is-invalid" />
+		<label class="col-sm-4" th:if="${#fields.hasErrors('equipo')}" th:errors="*{equipo}">Equipo Error</label>
     </div>
-    <div class="form-group">
-    	<label for="nacimiento" class="col-form-label" th:classappend="${#fields.hasErrors('nacimiento')}? text-danger">Nacimiento</label>
-		<input type="date" id="nacimiento" class="form-control" th:field="*{nacimiento}" th:classappend="${#fields.hasErrors('nacimiento')}? is-invalid"/>
-		<label th:if="${#fields.hasErrors('nacimiento')}" th:errors="*{nacimiento}">Nacimiento Error</label>
+    <div class="form-group row">
+    	<label for="nacimiento" class="col-sm-2 col-form-label" th:classappend="${#fields.hasErrors('nacimiento')}? text-danger">Nacimiento</label>
+		<input type="date" id="nacimiento" class="col-sm-6 form-control" th:field="*{nacimiento}" th:classappend="${#fields.hasErrors('nacimiento')}? is-invalid"/>
+		<label class="col-sm-4" th:if="${#fields.hasErrors('nacimiento')}" th:errors="*{nacimiento}">Nacimiento Error</label>
 	</div>
-	<div class="form-group">
-		<label for="peso" class="col-form-label" th:classappend="${#fields.hasErrors('peso')}? text-danger">Peso</label>
-		<input type="number" id="peso" class="form-control" th:field="*{peso}" th:classappend="${#fields.hasErrors('peso')}? is-invalid"/>
-		<label th:if="${#fields.hasErrors('peso')}" th:errors="*{peso}">Peso Error</label>
+	<div class="form-group row">
+		<label for="peso" class="col-sm-2 col-form-label" th:classappend="${#fields.hasErrors('peso')}? text-danger">Peso</label>
+		<input type="number" id="peso" class="col-sm-6 form-control" th:field="*{peso}" th:classappend="${#fields.hasErrors('peso')}? is-invalid"/>
+		<label class="col-sm-4" th:if="${#fields.hasErrors('peso')}" th:errors="*{peso}">Peso Error</label>
 	</div>
-	<div class="form-group">
-		<label for="altura" class="col-form-label" th:classappend="${#fields.hasErrors('altura')}? text-danger">Altura</label>
-		<input type="number" id="altura" class="form-control" th:field="*{altura}" th:classappend="${#fields.hasErrors('altura')}? is-invalid" />
-		<label th:if="${#fields.hasErrors('altura')}" th:errors="*{altura}">Altura Error</label>
+	<div class="form-group row">
+		<label for="altura" class="col-sm-2 col-form-label" th:classappend="${#fields.hasErrors('altura')}? text-danger">Altura</label>
+		<input type="number" id="altura" class="col-sm-6 form-control" th:field="*{altura}" th:classappend="${#fields.hasErrors('altura')}? is-invalid" />
+		<label class="col-sm-4" th:if="${#fields.hasErrors('altura')}" th:errors="*{altura}">Altura Error</label>
 	</div>
-	<div class="form-group">
-		<label for="imagen" class="col-form-label" th:classappend="${#fields.hasErrors('imagen')}? text-danger">Imagen</label>
-		<input type="file" id="imagen" class="form-control" th:field="*{imagen}" th:classappend="${#fields.hasErrors('imagen')}? is-invalid" />
-		<label th:if="${#fields.hasErrors('imagen')}" th:errors="*{imagen}">Imagen Error</label>
+	<div class="form-group row">
+		<label for="imagen" class="col-sm-2 col-form-label" th:classappend="${#fields.hasErrors('imagen')}? text-danger">Imagen</label>
+		<input type="file" id="imagen" class="col-sm-6 form-control" th:field="*{imagen}" th:classappend="${#fields.hasErrors('imagen')}? is-invalid" />
+		<label class="col-sm-4" th:if="${#fields.hasErrors('imagen')}" th:errors="*{imagen}">Imagen Error</label>
 	</div>
-	<div class="form-group">
-		<label for="cantidad" class="col-form-label" th:classappend="${#fields.hasErrors('cantidad')}? text-danger">Cantidad de cromos</label>
-		<input type="number" id="cantidad" class="form-control" th:field="*{cantidad}" th:classappend="${#fields.hasErrors('cantidad')}? is-invalid" />
-		<label th:if="${#fields.hasErrors('cantidad')}" th:errors="*{cantidad}">Cantidad Error</label>
+	<div class="form-group row">
+		<label for="cantidad" class="col-sm-2 col-form-label" th:classappend="${#fields.hasErrors('cantidad')}? text-danger">Cantidad de cromos</label>
+		<input type="number" id="cantidad" class="col-sm-6 form-control" th:field="*{cantidad}" th:classappend="${#fields.hasErrors('cantidad')}? is-invalid" />
+		<label class="col-sm-4" th:if="${#fields.hasErrors('cantidad')}" th:errors="*{cantidad}">Cantidad Error</label>
 		
 	</div>
 	 <div class="text-center">
