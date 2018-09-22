@@ -6,8 +6,16 @@ import org.springframework.web.servlet.config.annotation.WebMvcConfigurationSupp
 
 @Configuration
 public class UploadConfiguration extends WebMvcConfigurationSupport {
+	
+	 private static final String[] CLASSPATH_RESOURCE_LOCATIONS = {
+	            "classpath:/META-INF/resources/", "classpath:/resources/",
+	            "classpath:/static/", "classpath:/public/" };
+	 
     @Override
     public void addResourceHandlers(ResourceHandlerRegistry registry) {
-        registry.addResourceHandler("/uploaded/**").addResourceLocations("file:/tmp/upload/");
+        registry.addResourceHandler("/**").addResourceLocations(CLASSPATH_RESOURCE_LOCATIONS);
+        
+        // tmp is a dangerous location!
+        registry.addResourceHandler("/upload/**").addResourceLocations("file:/tmp/");
     }
 }

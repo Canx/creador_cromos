@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="49mm"
+   height="65mm"
+   viewBox="0 0 49 65"
+   version="1.1"
+   id="svg8"
+   inkscape:version="0.92.3 (2405546, 2018-03-11)"
+   sodipodi:docname="cromo_plantilla.svg">
+  <defs
+     id="defs2" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="3.3703846"
+     inkscape:cx="92.301723"
+     inkscape:cy="158.43889"
+     inkscape:document-units="mm"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     inkscape:window-width="1853"
+     inkscape:window-height="1016"
+     inkscape:window-x="67"
+     inkscape:window-y="27"
+     inkscape:window-maximized="1" />
+  <metadata
+     id="metadata5">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Capa 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(0,-232)">
+    <image
+       sodipodi:absref="/home/ruben/eclipse-workspace/creador_cromos/src/main/resources/static/sincara.png"
+       xlink:href="sincara.png"
+       width="35.024166"
+       height="34.230686"
+       preserveAspectRatio="none"
+       id="imagen"
+       x="4.1545825"
+       y="239.96619" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:10.58333302px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="19.369566"
+       y="34.79348"
+       id="text12"><tspan
+         sodipodi:role="line"
+         id="tspan10"
+         x="19.369566"
+         y="44.157249"
+         style="stroke-width:0.26458332" /></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:5.22498465px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.13062462"
+       x="22.245653"
+       y="263.73077"
+       id="nombre"
+       transform="scale(0.89455705,1.1178717)"><tspan
+         sodipodi:role="line"
+         id="tspan14"
+         x="22.245653"
+         y="263.73077"
+         style="stroke-width:0.13062462">Juan Perez</tspan></text>
+    <ellipse
+       style="fill:#00ffff;fill-opacity:1;stroke-width:0.13034488"
+       id="path4547"
+       cx="39.368961"
+       cy="240.63527"
+       rx="4.5138884"
+       ry="5.2596617" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:4.23333311px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="35.012081"
+       y="283.41907"
+       id="peso"><tspan
+         sodipodi:role="line"
+         x="35.012081"
+         y="283.41907"
+         style="font-size:4.23333311px;stroke-width:0.26458332"
+         id="tspan4557">99</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:2.54539704px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.19090477"
+       x="29.504749"
+       y="254.79129"
+       id="fechaNacimiento"
+       transform="scale(0.91705411,1.0904482)"><tspan
+         sodipodi:role="line"
+         id="tspan4553"
+         x="29.504749"
+         y="254.79129"
+         style="font-size:2.54539704px;stroke-width:0.19090477">12/01/1978</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:4.23333311px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="3.2872784"
+       y="287.86465"
+       id="altura"><tspan
+         sodipodi:role="line"
+         x="3.2872784"
+         y="287.86465"
+         style="font-size:4.23333311px;stroke-width:0.26458332"
+         id="tspan4557-6">1.90</tspan></text>
+  </g>
+</svg>

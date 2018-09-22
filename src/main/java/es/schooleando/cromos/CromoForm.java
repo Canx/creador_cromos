@@ -1,12 +1,5 @@
 package es.schooleando.cromos;
 
-import java.beans.Transient;
-import java.io.File;
-import java.io.IOException;
-import java.net.URL;
-import java.nio.file.Files;
-import java.nio.file.Path;
-import java.nio.file.Paths;
 import java.util.Date;
 
 import org.springframework.format.annotation.DateTimeFormat;
@@ -63,15 +56,8 @@ public class CromoForm {
 		return imagen;
 	}
 
-	public void setImagen(MultipartFile imagen) throws IOException {
+	public void setImagen(MultipartFile imagen) {
 		this.imagen = imagen;
-		
-		byte[] bytes = imagen.getBytes();
-        Path path = Paths.get("/tmp/upload/" + imagen.getOriginalFilename());
-        Files.write(path, bytes);
-        
-		// TODO: save image and initialize imagen_url!
-        this.setImagen_url("uploaded/" + imagen.getOriginalFilename());
 	}
 
 	public String getImagen_url() {

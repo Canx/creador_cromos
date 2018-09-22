@@ -3,13 +3,21 @@
 <head>
 <meta charset="UTF-8">
 <title>Mostrar cromo</title>
+<script>
+window.addEventListener("load", function(){
+		var svg=document.getElementById("cromoSVG")
+		var SVGDOM=svg.getSVGDocument();
+		SVGDOM.getElementById('nombre').textContent = "[[${cromo.nombre}]]";
+		SVGDOM.getElementById('peso').textContent = "[[${cromo.peso}]]";
+		SVGDOM.getElementById('fechaNacimiento').textContent = "[[${cromo.nacimiento}]]";
+		SVGDOM.getElementById('altura').textContent = "[[${cromo.altura}]]";
+		SVGDOM.getElementById('imagen').setAttribute('xlink:href',"[[${cromo.imagen_url}]]");
+		
+});
+</script>
 </head>
 <body>
-<h1>Mostrar cromo</h1>
-<p th:text="${cromo.nombre}">Nombre</p>
-<p th:text="${cromo.nacimiento}">Nacimiento</p>
-<p th:text="${cromo.peso}">Peso</p>
-<p th:text="${cromo.altura}">Altura</p>
-<img th:src="${cromo.imagen_url}" />
+<object height="20%" width="20%" id="cromoSVG" type="image/svg+xml" data="cromo_plantilla.svg">
+</object>
 </body>
 </html>

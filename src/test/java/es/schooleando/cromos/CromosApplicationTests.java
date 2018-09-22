@@ -1,4 +1,4 @@
-package es.schooleando.logindemo;
+package es.schooleando.cromos;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
