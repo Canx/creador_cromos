@@ -3,21 +3,44 @@
 <head>
 <meta charset="UTF-8">
 <title>Mostrar cromo</title>
+<link href="webjars/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
 <script>
 window.addEventListener("load", function(){
-		var svg=document.getElementById("cromoSVG")
-		var SVGDOM=svg.getSVGDocument();
-		SVGDOM.getElementById('nombre').textContent = "[[${cromo.nombre}]]";
-		SVGDOM.getElementById('peso').textContent = "[[${cromo.peso}]]";
-		SVGDOM.getElementById('fechaNacimiento').textContent = "[[${cromo.nacimiento}]]";
-		SVGDOM.getElementById('altura').textContent = "[[${cromo.altura}]]";
-		SVGDOM.getElementById('imagen').setAttribute('xlink:href',"[[${cromo.imagen_url}]]");
-		
+	    // load SVG
+	    xhr = new XMLHttpRequest();
+        xhr.open("GET","cromo_plantilla.svg",false);
+        // Following line is just to be on the safe side;
+        // not needed if your server delivers SVG with correct MIME type
+        xhr.overrideMimeType("image/svg+xml");
+        xhr.send("");
+        document.getElementById("svg").appendChild(xhr.responseXML.documentElement);
+
+		// clone SVG
+		var cromo = document.getElementById("svg8");
+		fill(cromo);
+		var clon;
+		for (i = 1; i < [[${cromo.cantidad}]]; i++) {
+			clon = cromo.cloneNode(true);
+			clon.id ="cromo" + (i+1);
+			document.getElementById("svg").appendChild(clon);	
+			fill(clon);	
+		}	
 });
+
+function fill(node) {
+	node.getElementById('nombre').textContent = "[[${cromo.nombre}]]";
+	node.getElementById('equipo').textContent = "[[${cromo.equipo}]]";
+	node.getElementById('peso').textContent = "[[${cromo.peso}]]";
+	node.getElementById('fechaNacimiento').textContent = "[[${#dates.format(cromo.nacimiento, 'dd-MM-yyyy')}]]";
+	node.getElementById('altura').textContent = "[[${cromo.altura}]]";
+	node.getElementById('imagen').setAttribute('xlink:href',"[[${cromo.imagen_url}]]");
+}
 </script>
 </head>
 <body>
-<object height="20%" width="20%" id="cromoSVG" type="image/svg+xml" data="cromo_plantilla.svg">
-</object>
+<div id="svg">
+</div>
+	  <button class="btn btn-primary hidden-print" onclick="window.print();" style="text-align: center"><span class="glyphicon glyphicon-print" aria-hidden="true"></span>Imprimir</button>
+<script src="webjars/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 </body>
 </html>

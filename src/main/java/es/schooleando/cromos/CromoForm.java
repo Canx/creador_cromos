@@ -8,6 +8,10 @@ import org.springframework.web.multipart.MultipartFile;
 public class CromoForm {
 	private String nombre;
 	
+	private String equipo;
+	
+	private String cantidad;
+	
 	@DateTimeFormat(pattern = "yyyy-MM-dd")
 	private Date nacimiento;
 	
@@ -66,5 +70,21 @@ public class CromoForm {
 
 	public void setImagen_url(String imagen_url) {
 		this.imagen_url = imagen_url;
+	}
+
+	public String getEquipo() {
+		return equipo;
+	}
+
+	public void setEquipo(String equipo) {
+		this.equipo = equipo;
+	}
+
+	public String getCantidad() {
+		return cantidad;
+	}
+
+	public void setCantidad(String cantidad) {
+		this.cantidad = cantidad;
 	}
 }

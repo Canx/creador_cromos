@@ -3,16 +3,42 @@
 <head>
 <meta charset="UTF-8">
 <title>Crear cromo</title>
+<link href="webjars/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
 <h1>Crear cromo nuevo</h1>
 <form action="#" th:action="@{/save}" th:object="${cromo}" method="post" enctype="multipart/form-data">
-<p>Nombre del jugador: <input type="text" th:field="*{nombre}" /></p>
-<p>Fecha de nacimiento: <input type="date" th:field="*{nacimiento}" /></p>
-<p>Peso: <input type="number" th:field="*{peso}" /></p>
-<p>Altura: <input type="number" th:field="*{altura}" /></p>
-<p>Imagen: <input type="file" th:field="*{imagen}" /></p>
-<button type="submit">Enviar</button>
+	<div class="form-group">
+	<label for="nombre">Nombre</label>
+    <input type="text" id="nombre" class="form-control" th:field="*{nombre}" />
+	</div>
+	<div class="form-group">
+		<label for="equipo">Equipo</label>
+		<input type="text" id="equipo" class="form-control" th:field="*{equipo}" />
+    </div>
+    <div class="form-group">
+    	<label for="nacimiento">Nacimiento</label>
+		<input type="date" id="nacimiento" class="form-control" th:field="*{nacimiento}" />
+	</div>
+	<div class="form-group">
+		<label for="peso">Peso</label>
+		<input type="number" id="peso" class="form-control" th:field="*{peso}" />
+	</div>
+	<div class="form-group">
+		<label for="altura">Altura</label>
+		<input type="number" id="altura" class="form-control" th:field="*{altura}" />
+	</div>
+	<div class="form-group">
+		<label for="imagen">Imagen</label>
+		<input type="file" if="imagen" class="form-control"th:field="*{imagen}" />
+	</div>
+	<div class="form-group">
+		<label for="cantidad">Cantidad de cromos</label>
+		<input type="number" id="cantidad" class="form-control" th:field="*{cantidad}" />
+	</div>
+
+	<button type="submit" class="btn btn-primary">Enviar</button>
 </form>
+<script src="webjars/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 </body>
 </html>

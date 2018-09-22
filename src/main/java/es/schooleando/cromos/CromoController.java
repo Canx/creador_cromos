@@ -22,11 +22,8 @@ import org.springframework.web.bind.annotation.PostMapping;
 public class CromoController {
 	
 	Logger logger = LoggerFactory.getLogger(CromoController.class);
-
-	@Autowired
-	private ServletContext context;
 	
-	@GetMapping("form")
+	@GetMapping("/")
 	public String form(Model model) {
 		model.addAttribute("cromo", new CromoForm());
 		return "form.html";
