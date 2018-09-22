@@ -35,6 +35,8 @@
 	<div class="form-group" th:classappend="${#fields.hasErrors('cantidad')}? has-error">
 		<label for="cantidad">Cantidad de cromos</label>
 		<input type="number" id="cantidad" class="form-control" th:field="*{cantidad}"  />
+		<label th:if="${#fields.hasErrors('cantidad')}" th:errors="*{cantidad}">Cantidad Error</label>
+		
 	</div>
 
 	<button type="submit" class="btn btn-primary">Enviar</button>
