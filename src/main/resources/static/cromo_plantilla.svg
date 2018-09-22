@@ -27,13 +27,13 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="3.3703846"
-     inkscape:cx="110.36662"
+     inkscape:cx="110.06992"
      inkscape:cy="122.83465"
      inkscape:document-units="mm"
      inkscape:current-layer="layer1"
      showgrid="false"
      inkscape:window-width="1853"
-     inkscape:window-height="1016"
+     inkscape:window-height="1025"
      inkscape:window-x="67"
      inkscape:window-y="27"
      inkscape:window-maximized="1"
@@ -112,9 +112,9 @@
      id="layer2"
      inkscape:label="Imagen"
      sodipodi:insensitive="true"
-     style="display:none;opacity:0.98999999">
+     style="display:none;opacity:1">
     <image
-       sodipodi:absref="/home/ruben/eclipse-workspace/creador_cromos/src/main/resources/static/cromo.jpg"
+       sodipodi:absref="/home/ruben/Desarrollo/creador_cromos/src/main/resources/static/cromo.jpg"
        xlink:href="cromo.jpg"
        y="0.022220472"
        x="0.096982382"
@@ -130,7 +130,7 @@
      transform="translate(0,-232)"
      style="opacity:1">
     <image
-       sodipodi:absref="/home/ruben/eclipse-workspace/creador_cromos/src/main/resources/static/sincara.png"
+       sodipodi:absref="/home/ruben/Desarrollo/creador_cromos/src/main/resources/static/sincara.png"
        xlink:href="sincara.png"
        style=""
        y="235.0616"

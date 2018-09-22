@@ -1,6 +1,10 @@
 package es.schooleando.cromos;
 
+import java.io.Serializable;
 import java.util.Date;
+
+import javax.validation.constraints.Min;
+import javax.validation.constraints.NotNull;
 
 import org.springframework.format.annotation.DateTimeFormat;
 import org.springframework.web.multipart.MultipartFile;
@@ -10,6 +14,8 @@ public class CromoForm {
 	
 	private String equipo;
 	
+	@NotNull
+    @Min(1)
 	private String cantidad;
 	
 	@DateTimeFormat(pattern = "yyyy-MM-dd")

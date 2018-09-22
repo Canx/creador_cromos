@@ -3,11 +3,11 @@
 <head>
 <meta charset="UTF-8">
 <title>Crear cromo</title>
-<link href="webjars/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
+<link href="webjars/bootstrap/4.1.3/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
 <h1>Crear cromo nuevo</h1>
-<form action="#" th:action="@{/save}" th:object="${cromo}" method="post" enctype="multipart/form-data">
+<form action="#" th:action="@{/}" th:object="${cromo}" method="post" enctype="multipart/form-data">
 	<div class="form-group">
 	<label for="nombre">Nombre</label>
     <input type="text" id="nombre" class="form-control" th:field="*{nombre}" />
@@ -32,13 +32,14 @@
 		<label for="imagen">Imagen</label>
 		<input type="file" if="imagen" class="form-control"th:field="*{imagen}" />
 	</div>
-	<div class="form-group">
+	<div class="form-group" th:classappend="${#fields.hasErrors('cantidad')}? has-error">
 		<label for="cantidad">Cantidad de cromos</label>
-		<input type="number" id="cantidad" class="form-control" th:field="*{cantidad}" />
+		<input type="number" id="cantidad" class="form-control" th:field="*{cantidad}"  />
 	</div>
 
 	<button type="submit" class="btn btn-primary">Enviar</button>
 </form>
-<script src="webjars/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+<script src="webjars/jquery/3.3.1/jquery.min.js"></script>
+<script src="webjars/bootstrap/4.1.3/js/bootstrap.min.js"></script>
 </body>
 </html>
