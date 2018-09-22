@@ -4,12 +4,12 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>es.schooleando</groupId>
-	<artifactId>login-demo</artifactId>
+	<artifactId>creador-cromos</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>jar</packaging>
 
-	<name>login-demo</name>
-	<description>Demo project for Spring Boot</description>
+	<name>creador-cromos</name>
+	<description>Generador de cromos</description>
 
 	<parent>
 		<groupId>org.springframework.boot</groupId>
