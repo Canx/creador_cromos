@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>Mostrar cromo</title>
+</head>
+<body>
+<h1>Mostrar cromo</h1>
+<p th:text="${cromo.nombre}">Nombre</p>
+<p th:text="${cromo.nacimiento}">Nacimiento</p>
+<p th:text="${cromo.peso}">Peso</p>
+<p th:text="${cromo.altura}">Altura</p>
+<img th:src="${cromo.imagen_url}" />
+</body>
+</html>

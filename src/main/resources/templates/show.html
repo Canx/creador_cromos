@@ -29,7 +29,7 @@ window.addEventListener("load", function(){
 
 function fill(node) {
 	node.getElementById('nombre').textContent = "[[${cromo.nombre}]]";
-	node.getElementById('equipo').textContent = "[[${cromo.equipo}]]";
+	node.getElementById('equipo').textContent = "[[${equipos[__${cromo.equipo}__]}]]";
 	node.getElementById('peso').textContent = "[[${cromo.peso}]]";
 	node.getElementById('fechaNacimiento').textContent = "[[${#dates.format(cromo.nacimiento, 'dd-MM-yyyy')}]]";
 	node.getElementById('altura').textContent = "[[${cromo.altura}]]";

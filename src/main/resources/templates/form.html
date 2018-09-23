@@ -16,10 +16,21 @@
     <input type="text" id="nombre" class="col-sm-6 form-control" th:field="*{nombre}" th:classappend="${#fields.hasErrors('nombre')}? is-invalid" />
     <label class="col-sm-4" th:if="${#fields.hasErrors('nombre')}" th:errors="*{peso}">Nombre Error</label>
 	</div>
-	<div class="form-group row">
-		<label for="equipo" class="col-sm-2 col-form-label" th:classappend="${#fields.hasErrors('equipo')}? text-danger">Equipo</label>
-		<input type="text" id="equipo" class="col-sm-6 form-control" th:field="*{equipo}" th:classappend="${#fields.hasErrors('equipo')}? is-invalid" />
-		<label class="col-sm-4" th:if="${#fields.hasErrors('equipo')}" th:errors="*{equipo}">Equipo Error</label>
+<!-- 	<div class="form-group row"> -->
+<!-- 		<label for="equipo" class="col-sm-2 col-form-label" th:classappend="${#fields.hasErrors('equipo')}? text-danger">Equipo</label> -->
+<!-- 		<input type="text" id="equipo" class="col-sm-6 form-control" th:field="*{equipo}" th:classappend="${#fields.hasErrors('equipo')}? is-invalid" /> -->
+<!-- 		<label class="col-sm-4" th:if="${#fields.hasErrors('equipo')}" th:errors="*{equipo}">Equipo Error</label> -->
+<!--     </div> -->
+    <div class="form-group row">
+    	 <label for="equipo" class="col-sm-2 col-form-label" th:classappend="${#fields.hasErrors('equipo')}? text-danger">Equipo</label>
+    	 <select class="col-sm-6 form-control" th:field="*{equipo}" th:classappend="${#fields.hasErrors('equipo')}? is-invalid">
+	         <option value=""> -- </option>
+             <option th:each="key : ${equipos.keySet()}"
+                     th:value="${key}"
+                     th:utext="${equipos.get(key)}">
+             </option>
+         </select>
+         <label class="col-sm-4" th:if="${#fields.hasErrors('equipo')}" th:errors="*{equipo}">Equipo Error</label>
     </div>
     <div class="form-group row">
     	<label for="nacimiento" class="col-sm-2 col-form-label" th:classappend="${#fields.hasErrors('nacimiento')}? text-danger">Nacimiento</label>

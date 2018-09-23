@@ -1,5 +1,6 @@
 package es.schooleando.cromos;
 
+import java.beans.Transient;
 import java.io.Serializable;
 import java.util.Date;
 
@@ -8,15 +9,18 @@ import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Positive;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.format.annotation.DateTimeFormat;
 import org.springframework.web.multipart.MultipartFile;
 
 public class CromoForm {
+	
 	@NotBlank
 	private String nombre;
 	
-	@NotBlank
-	private String equipo;
+	@NotNull
+	@Min(1)
+	private int equipo;
 	
 	@NotNull
     @Min(1)
@@ -38,6 +42,9 @@ public class CromoForm {
 	
 	private MultipartFile imagen;
 
+	public CromoForm() {
+	}
+	
 	public Date getNacimiento() {
 		return nacimiento;
 	}
@@ -86,11 +93,11 @@ public class CromoForm {
 		this.imagen_url = imagen_url;
 	}
 
-	public String getEquipo() {
+	public Integer getEquipo() {
 		return equipo;
 	}
 
-	public void setEquipo(String equipo) {
+	public void setEquipo(Integer equipo) {
 		this.equipo = equipo;
 	}
 

@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>Crear cromo</title>
+</head>
+<body>
+<h1>Crear cromo nuevo</h1>
+<form action="#" th:action="@{/save}" th:object="${cromo}" method="post" enctype="multipart/form-data">
+<p>Nombre del jugador: <input type="text" th:field="*{nombre}" /></p>
+<p>Fecha de nacimiento: <input type="date" th:field="*{nacimiento}" /></p>
+<p>Peso: <input type="number" th:field="*{peso}" /></p>
+<p>Altura: <input type="number" th:field="*{altura}" /></p>
+<p>Imagen: <input type="file" th:field="*{imagen}" /></p>
+<button type="submit">Enviar</button>
+</form>
+</body>
+</html>
