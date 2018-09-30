@@ -40,6 +40,7 @@ public class CromoForm {
 	
 	private String imagen_url;
 	
+	@ValidImage
 	private MultipartFile imagen;
 
 	public CromoForm() {

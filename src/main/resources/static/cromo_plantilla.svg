@@ -26,18 +26,18 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="3.3703846"
-     inkscape:cx="110.06992"
-     inkscape:cy="122.83465"
+     inkscape:zoom="4.7664436"
+     inkscape:cx="139.23772"
+     inkscape:cy="194.88658"
      inkscape:document-units="mm"
      inkscape:current-layer="layer1"
      showgrid="false"
      inkscape:window-width="1853"
-     inkscape:window-height="1025"
+     inkscape:window-height="1016"
      inkscape:window-x="67"
      inkscape:window-y="27"
      inkscape:window-maximized="1"
-     showguides="true"
+     showguides="false"
      inkscape:guide-bbox="true">
     <sodipodi:guide
        position="46.434178,17.035024"
@@ -114,7 +114,7 @@
      sodipodi:insensitive="true"
      style="display:none;opacity:1">
     <image
-       sodipodi:absref="/home/ruben/Desarrollo/creador_cromos/src/main/resources/static/cromo.jpg"
+       sodipodi:absref="/home/ruben/eclipse-workspace/creador_cromos/src/main/resources/static/cromo.jpg"
        xlink:href="cromo.jpg"
        y="0.022220472"
        x="0.096982382"
@@ -130,7 +130,7 @@
      transform="translate(0,-232)"
      style="opacity:1">
     <image
-       sodipodi:absref="/home/ruben/Desarrollo/creador_cromos/src/main/resources/static/sincara.png"
+       sodipodi:absref="/home/ruben/eclipse-workspace/creador_cromos/src/main/resources/static/sincara.png"
        xlink:href="sincara.png"
        style=""
        y="235.0616"
@@ -170,12 +170,12 @@
     <text
        xml:space="preserve"
        style="font-style:normal;font-weight:normal;font-size:1.92039251px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.12002453"
-       x="43.990021"
+       x="44.44278"
        y="284.41626"
        id="peso"
-       transform="scale(0.98485637,1.0153765)"><tspan
+       transform="scale(0.98485636,1.0153765)"><tspan
          sodipodi:role="line"
-         x="43.990021"
+         x="44.44278"
          y="284.41626"
          style="font-size:1.92039251px;stroke-width:0.12002453"
          id="tspan4557">99</tspan></text>
@@ -194,12 +194,12 @@
     <text
        xml:space="preserve"
        style="font-style:normal;font-weight:normal;font-size:1.67338192px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.10458637"
-       x="46.999298"
+       x="47.152397"
        y="258.18381"
        id="altura"
        transform="scale(0.90642693,1.1032329)"><tspan
          sodipodi:role="line"
-         x="46.999298"
+         x="47.152397"
          y="258.18381"
          style="font-size:1.67338192px;stroke-width:0.10458637"
          id="tspan4557-6">1.90</tspan></text>
@@ -265,7 +265,7 @@
        rx="0" />
     <text
        xml:space="preserve"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:1.89282916px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:end;letter-spacing:0px;word-spacing:0px;writing-mode:lr;text-anchor:end;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.04732094;"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:1.89282918px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:end;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:end;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.04732094"
        x="49.875923"
        y="270.26483"
        id="equipo"
@@ -274,6 +274,15 @@
          id="tspan1056"
          x="49.875923"
          y="270.26483"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:1.89282916px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:end;writing-mode:lr;text-anchor:end;stroke-width:0.04732094;">EquipoXXXXXXXXXXXXXXXXXXXXXXXXXX</tspan></text>
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:1.89282918px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:end;writing-mode:lr-tb;text-anchor:end;stroke-width:0.04732094">EquipoXXXXXXXXXXXXXXXXXXXXXXXXXX</tspan></text>
+    <image
+       sodipodi:absref="/home/ruben/eclipse-workspace/creador_cromos/src/main/resources/static/equipo1.png"
+       xlink:href="equipo1.png"
+       y="235.0616"
+       x="34.518719"
+       id="logo"
+       preserveAspectRatio="none"
+       height="11.91546"
+       width="11.91546" />
   </g>
 </svg>
